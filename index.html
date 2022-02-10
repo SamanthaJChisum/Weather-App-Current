@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2103dee836.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container shadow-sm">  
+      <div class="col-sm-6">
+        <form class="row row-cols-lg-auto g-3 align-items-center" id="search-form">
+          <div class="col-12">
+            <input
+              type="search"
+              placeholder="Find a city"
+              autocomplete="off"
+              autofocus="on"
+              id="search-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-12">
+            <input type="submit" value="Submit" class="form-control btn btn-promary shadow-sm w-100"/>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success w-100" id="current-location-button">Locate Me</button>
+          </div>
+          </form>
+        </div>
+      <hr/>
+      <div class="date-time">
+        <h4>Sunday|January,17|8:01</h4>
+      </div>
+      <div id="current-city">
+        <h1></h1>
+      </div>
+    
+      <div class="weather-content">
+        <h1 id="current-temp"></h1>
+        <h2><span><a href="" class="celsius">C°</a></span> | <span><a href="" class="fahrenheit">F°</a></span></h2>
+          <h3 id="current-weather"></h3>
+        </div>
+        
+        <div class="current-factors"> 
+          <div class="row">
+            <div class="col">
+              <div>
+              High/Low
+              </div>
+              <div class="row">
+                <div class="col">
+                <span id="high">40°</span>°|<span id="low">20</span>°
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+              Humidity
+              </div>
+              <div class="row">
+                <div class="col">
+                <span id="humidity">61</span>%
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+              Wind
+              </div>
+              <div class="row">
+                <div class="col">
+                <span id="wind-speed">17</span>MPH
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+              Precipitation
+              </div>
+              <div class="row">
+                <div class="col">
+                <span id="rain">100</span>%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="forecast">
+          <div class="wrap">
+            </div class="row justify-content-md-center">
+              <div class="col col-sm ">
+                <div class="card" style="background-color: transparent;">
+                  <div class="card-info">
+                  <h2 class="card-title"><span>Monday</span></h2>
+                  <h3 class="card-description"><span>40°|27°</span><h3>
+                  <div class="card-image"><img src="img/Sunshine.jpeg" alt="sunny" width="300"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm">
+              <div class="card"style="background-color: transparent;">
+                <div class="card-info">
+                  <h2 class="card-title"><span>Tuesday</span></h2>
+                  <h3 class="card-description"><span>43°|17°</span><h3>
+                  <div class="card-image"><img src="img/Sunshine.jpeg" alt="sunny" width="300"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm">
+              <div class="card" style="background-color: transparent;">
+                <div class="card-info">
+                  <h2 class="card-title"><span>Wednesday</span></h2>
+                  <h3 class="card-description"><span>51°|26°</span><h3>
+                  <div class="card-image"><img src="img/PartlyCloudy.jpeg" alt="cloudy" width="300"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm">
+              <div class="card" style="background-color: transparent;">
+                <div class="card-info">
+                  <h2 class="card-title"><span>Thursday</span></h2>
+                  <h3 class="card-description"><span>46°|35°</span><h3>
+                  <div class="card-image"><img src="img/Raining.jpeg" alt="rain" width="300"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm">
+              <div class="card" style="background-color: transparent;">
+                <div class="card-info">
+                  <h2 class="card-title"><span>Friday</span></h2>
+                  <h3 class="card-description"><span>37°|24°</span><h3>
+                <div class="card-image"><img src="img/SnowDay.jpeg" alt="rain" width="300"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credit">This website was coded by Samantha Chisum</div>
+  <script src="javascript/index.js"></script>
+  </body>
+</html>

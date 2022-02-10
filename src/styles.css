@@ -1,0 +1,88 @@
+body {
+  background-image: url(../img/SnowDay.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  max-width: 70%;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  padding-bottom: 50px;
+}
+div {
+  font-size: 34px;
+}
+.current-city {
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 50px;
+}
+.date-time {
+  letter-spacing: 10px;
+  padding-top: 15px;
+}
+#currentTemp {
+  font-size: 120px;
+  padding-top: 40px;
+}
+h4 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.current-weather,
+.current-factors {
+  letter-spacing: 2px;
+}
+.current-factors {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 75%;
+  margin: 0 auto;
+  justify-content: left;
+}
+.weather-content {
+  margin-bottom: 30px;
+}
+a:hover,
+.card-title {
+  color: rgba(1, 1, 1, 0.4);
+}
+a {
+  color: rgba(1, 1, 1);
+}
+.date-time,
+.current-factors div,
+.card-title {
+  font-size: 18px;
+}
+.row {
+  height: fit-content;
+  flex-wrap: nowrap;
+}
+.column {
+  width: 150px;
+  letter-spacing: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+img {
+  border-radius: 10px;
+  width: 95%;
+  height: 100px;
+  object-fit: cover;
+}
+.credit {
+  font-size: 15px;
+  position: static;
+  opacity: 0.4;
+}
