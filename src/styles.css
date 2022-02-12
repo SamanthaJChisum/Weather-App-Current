@@ -11,10 +11,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.6);
   border-radius: 40px;
-  max-width: 70%;
+  max-width: 50%;
   margin-top: 50px;
   margin-bottom: 35px;
   padding-bottom: 50px;
+}
+form {
+  display: inline;
+  margin: 0 auto;
+  max-width: 80%;
 }
 div {
   font-size: 34px;
@@ -46,7 +51,7 @@ a {
   text-align: center;
   padding: 20px;
   margin-bottom: 30px;
-  max-width: 75%;
+  max-width: 65%;
   margin: 0 auto;
   justify-content: left;
 }
@@ -64,6 +69,13 @@ a {
 .current-factors div,
 .card-title {
   font-size: 18px;
+}
+.card-image {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  border: rgba(1, 1, 1, 0.4);
+  border-radius: 50%;
 }
 .row {
   height: fit-content;
